@@ -13,8 +13,10 @@ app.use(express.urlencoded());
 
 connectToDB();
 
-app.get("/", (req,res) => {
-  res.render("index");
+app.get("/", async (req,res) => {
+  const arrays_produtos = await Produto.find();
+ 
+  res.render("index",{arrays_produtos});
 })
 
 app.get("/admin", (req,res) => {
