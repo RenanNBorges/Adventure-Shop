@@ -13,6 +13,10 @@ const produtoSchema = new mongoose.Schema({
     type: String,
     require: true,
   },
+  category: {
+    type: String,
+    require: true,
+  },
   price: {
     type: Number,
     require: true,
