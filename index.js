@@ -2,7 +2,7 @@ require("dotenv").config();
 const express = require('express')
 const connectToDB = require("./database/db")
 const path = require("path");
-const Produto = require("./model/Produto");
+const Produto = require("./model/ProdutoModel");
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -16,7 +16,12 @@ connectToDB();
 app.get("/", async (req,res) => {
   const arrays_produtos = await Produto.find();
  
-  res.render("index",{arrays_produtos});
+  res.render("pages/index",{arrays_produtos});
+})
+
+app.get("/login", (req,res) => {
+
+  res.render("pages/login");
 })
 
 app.get("/admin", (req,res) => {

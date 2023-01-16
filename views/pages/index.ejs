@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <%- include('../partials/head'); %>
+</head>
+<body>
+    <%- include('../partials/header'); %>
+    <section class="container">
+        <%- include('../partials/banner'); %>
+    </section>
+      <!--
+      - CATEGORY
+    -->
+    <main>
+        <% arrays_produtos.forEach((produto)=>{  %>
+        <div class="category"></div>
+            <div class="container">
+                <div class="category-item-container has-scrollbar">
+                    <div class="category-item">            
+                        <div class="category-img-box">
+                            <img src="<%= produto.linkImage  %>" alt="<%= produto.name  %>" width="30">
+                        </div>
+                        <div class="category-content-box">
+                             <div class="category-content-flex">
+                                <h3 class="category-item-title"><%= produto.name  %></h3>
+                            </div>
+                            <a href="#" class="category-btn">Ver Mais</a>
+                            </div>
+                        </div>
+                    </a>
+                    <% })%>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+        <div class="product-main">
+            
+            <h2 class="title">Produtos Novos</h2>
+            
+                <div class="product-grid">
+                    <% arrays_produtos.forEach((produto)=>{  %> 
+                    <div class="showcase">
+        
+                        <div class="showcase-banner">
+        
+                        <img src="<%= produto.linkImage  %>" alt="<%= produto.name  %>" width="300" class="product-img default">
+        
+                        <div class="showcase-actions">
+        
+                            <button class="btn-action">
+                            <ion-icon name="heart-outline"></ion-icon>
+                            </button>
+        
+                        </div>
+        
+                        </div>
+        
+                        <div class="showcase-content">
+        
+                        <a href="#" class="showcase-category"><%= produto.category  %></a>
+        
+                        <a href="#">
+                            <h3 class="showcase-title"><%= produto.name  %></h3>
+                        </a>
+        
+                        <div class="price-box">
+                            <p class="price">R$<%= produto.price  %></p>
+                        </div>
+        
+                    </div>
+                </a>
+                <% })%>
+            </div>
+        </div>
+    </div>
+</div>
+
+    </main>
+    <%- include('../partials/footer'); %>
+</body>
+
+</html>

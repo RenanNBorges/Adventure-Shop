@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <%- include('../partials/head'); %>
+    <link rel="stylesheet" href="/login.css">
+</head>
+<body>
+    <%- include('../partials/header'); %>
+
+    <main>
+
+        <div class="container-login" id="container-login">
+            <div class="form-container-login sign-up-container-login">
+                <form action="#">
+                    <h1>Cadastrar-se</h1>
+                    <input type="text" placeholder="Nome" />
+                    <input type="email" placeholder="Email" />
+                    <input type="password" placeholder="Senha" />
+                    <button class="login-button">Criar Conta</button>
+                </form>
+            </div>
+            <div class="form-container-login sign-in-container-login">
+                <form action="#" method="post">
+                    <h1>Entrar</h1>
+                    <input type="email" name="login" placeholder="Email" />
+                    <input type="password" name="password" placeholder="Senha" />
+                    <input type="submit" placeholder="Senha" name="login-button" value="Entrar" class="login-button"/>
+                </form>
+            </div>
+            <div class="overlay-container-login">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>Bem-vindo de volta!</h1>
+                        <p>Já possui uma conta? Faça o login:</p>
+                        <button class="ghost" id="signIn">Entrar</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1>Olá, amigo(a)!</h1>
+                        <p>Crie uma conta para se juntar com a gente:</p>
+                        <button class="ghost" id="signUp">Cadastrar-se</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</br>
+    <%- include('../partials/footer'); %>
+
+
+    
+    
+</body>
+
+</html>
