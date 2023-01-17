@@ -30,7 +30,9 @@ Frameworks: EJS
 
 Banco de Dados: MongoDB
 
-* O 
+• O objetivo desse trabalho foi a criação de um site de um e commerce, nosso grupo decidiu por fazer o Adventure Shop, uma  loja voltada para equipamentos de acampamento. 
+• O desenvolvimento do site se deu por meio da divisão de tarefas,  aproveitando os conhecimentos obtidos com o trabalho do  semestre anterior. 
+
 
 
 
