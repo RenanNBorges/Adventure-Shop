@@ -4,21 +4,18 @@ Acesse o site: https://adventure-shop-website.onrender.com/
 
 Relatorio do Projeto
 
-Participantes: 
+#Participantes: 
 - Isadora Silva 
 - Renan Borges
 - Romulo de Moraes
 
-
-
-=======================
-Divisão de Equipe:
+#Divisão de Equipe:
 Estilização Front-end:
 -> Isadora Silva 
-======================
+
 Arquitetura de Projeto e Tecnologias Back-end:
 -> Renan Borges
-=====================
+
 Construção de Códigos JS:
 -> Romulo de Moraes
 
