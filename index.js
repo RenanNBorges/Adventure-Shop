@@ -35,6 +35,8 @@ app.get('/barracas', (req, res) => {
 });
 
 
+
+
 app.get('/mochilas', (req, res) => {
   Produto.find({category: "Mochila"}, (err, items) => {
     if (err) {
